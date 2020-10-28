@@ -717,9 +717,7 @@ img {
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
     background-color: #2f303a;
     color: #ffffff;
 
@@ -930,7 +928,6 @@ img {
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 8px;
-    background-image: url(../img/icon-check.svg);
     background-size: 13px;
     background-repeat: no-repeat;
     background-position: center;
@@ -940,6 +937,7 @@ img {
   .modal-form-policy:checked + .modal-form-policy-label::before {
     background-color: var(--accent-color);
     border: none;
+    background-image: url(../img/icon-check.svg);
   }
   
   .modal-form-policy .is-hidden {
