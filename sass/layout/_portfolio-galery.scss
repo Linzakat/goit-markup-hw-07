@@ -3,7 +3,7 @@
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    color:var(--title-text-color);
+    color: $title-text-color;
     background-color: #f5f4fa;
     text-align: center;
     border-radius: 4px;
@@ -25,15 +25,15 @@
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus{
-	background:var(--accent-color);
-	color:var(--primary-white-color);
+	background: $accent-color;
+	color: $primary-white-color;
 }
 .our-works {
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color:var(--title-text-color);
+    color: $title-text-color;
     margin-bottom: 4px;
     padding-top: 20px;
     padding-left: 24px;
@@ -44,7 +44,7 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color:var(--primary-text-color);
+    color: $primary-text-color;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 20px;
@@ -71,7 +71,7 @@
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color:var(--primary-white-color);
+  color: $primary-white-color;
 }
 .our-works-box:hover .our-works-overlay {
   transform: translateY(0%);

@@ -3,7 +3,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:var(--title-text-color);
+    color: $title-text-color;
     list-style: none;
     display: flex;
     font-style: normal;
@@ -17,14 +17,14 @@
   
   .site-navigation a:hover,
   .site-navigation a:focus  {
-    color:var(--accent-color);
+    color: $accent-color;
   }
   .footer {
     background: #2F303A;
 }
 .footer .address,
 .footer .email {
-    color: var(--primary-white-color);
+    color: $primary-white-color;
     font-style: normal;
     line-height: 1.71;
 }
@@ -40,7 +40,7 @@
   display: flex;
 }
 .footer .logo {
-    color:var(--primary-white-color);
+    color: $primary-white-color;
     display: flex;
     padding-bottom: 20px;
 }
@@ -50,7 +50,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   margin-bottom: 20px;
 }
 .right-footer {
