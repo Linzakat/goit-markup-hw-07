@@ -20,3 +20,22 @@ body {
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
     }
+    .list { 
+      list-style: none;}
+    .link {
+      text-decoration: none;}
+    li {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        img {
+          display: block;
+        }
+        
