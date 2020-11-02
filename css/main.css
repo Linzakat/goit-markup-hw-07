@@ -54,6 +54,9 @@ body {
 
 .list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .link {
@@ -66,12 +69,6 @@ li {
 
 a {
   text-decoration: none;
-}
-
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 img {
@@ -95,22 +92,6 @@ img {
   border-radius: 4px;
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
-}
-
-.modal .btn {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  background-color: #FFFFFF;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
 .modal-form-btn {
@@ -177,8 +158,7 @@ img {
   padding-top: 12px;
 }
 
-.modal-form-input:focus,
-.modal-form-message:focus {
+.modal-form-input:focus, .modal-form-message:focus {
   outline: none;
   border: 1px solid #2196f3;
 }
@@ -198,6 +178,8 @@ img {
 }
 
 .modal-form-policy-label {
+  display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -225,6 +207,30 @@ img {
   background-image: url(../img/icon-check.svg);
 }
 
+.modal .btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .social-list-link {
   display: flex;
   border-radius: 50%;
@@ -236,16 +242,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0;
-  margin: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover, .social-list-link:focus {
   background-color: #2196f3;
   fill: #FFFFFF;
 }
@@ -269,16 +266,16 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.li-link:not(:last-child) {
-  margin-right: 10px;
-}
-
 .social-list-link-footer:hover {
   background-color: #2196f3;
 }
 
 .social-list-link-footer:hover .social-svg {
   fill: #FFFFFF;
+}
+
+.li-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .title {
@@ -289,7 +286,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
-  text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
   padding-top: 200px;
@@ -332,15 +328,26 @@ img {
   padding: 15px;
 }
 
-.email {
+.email,
+.address {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email {
   margin-right: 50px;
   margin-left: auto;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address {
+  font-style: normal;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .email:hover,
@@ -350,33 +357,16 @@ img {
   color: #2196f3;
 }
 
-.address {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  font-style: normal;
-  list-style: none;
-  color: #757575;
-  display: flex;
-  align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .container-address {
   display: flex;
   margin-left: auto;
   margin-top: 32px;
 }
 
-.konvert-smartfone-svg {
+.envelope-smartphone-svg {
   margin-right: 10px;
   fill: currentcolor;
   align-items: center;
-}
-
-.adress {
-  font-style: normal;
 }
 
 .container-header {
@@ -608,7 +598,7 @@ button {
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .content {
@@ -770,9 +760,9 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-site .site-navigation .address,
-.footer-site .site-navigation .email,
-.footer-site .site-navigation .telefon {
+.site-navigation .address,
+.site-navigation .email,
+.site-navigation .telefon {
   line-height: 1.71;
 }
 
@@ -792,6 +782,16 @@ button {
   line-height: 1.71;
 }
 
+.footer .logo {
+  color: #FFFFFF;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.footer-site {
+  display: block;
+}
+
 .container-footer {
   height: 252px;
   margin-left: auto;
@@ -802,12 +802,6 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
-}
-
-.footer .logo {
-  color: #FFFFFF;
-  display: flex;
-  padding-bottom: 20px;
 }
 
 .right-footer h2 {
@@ -822,10 +816,6 @@ button {
 
 .right-footer {
   margin-left: 70px;
-}
-
-.footer-site {
-  display: block;
 }
 
 .modal-mailing {
@@ -905,7 +895,7 @@ button {
 }
 
 .form-title {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;

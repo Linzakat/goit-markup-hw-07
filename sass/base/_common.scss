@@ -21,7 +21,11 @@ body {
     background-color: $primary-white-color;
     }
     .list { 
-      list-style: none;}
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     .link {
       text-decoration: none;}
     li {
@@ -30,11 +34,6 @@ body {
       a {
         text-decoration: none;
       }
-      .list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        }
         img {
           display: block;
         }

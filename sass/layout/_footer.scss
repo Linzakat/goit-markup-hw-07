@@ -9,9 +9,9 @@
     font-style: normal;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .footer-site .site-navigation .address,
-  .footer-site .site-navigation .email,
-  .footer-site .site-navigation .telefon {
+   .site-navigation .address,
+   .site-navigation .email,
+   .site-navigation .telefon {
     line-height: 1.71;
   }
   
@@ -21,12 +21,21 @@
   }
   .footer {
     background: #2F303A;
-}
-.footer .address,
-.footer .email {
+
+   .address,
+   .email {
     color: $primary-white-color;
     font-style: normal;
     line-height: 1.71;
+  }
+   .logo {
+    color: $primary-white-color;
+    display: flex;
+    padding-bottom: 20px;
+   }
+   &-site {
+    display: block;
+  }
 }
 .container-footer {
   height: 252px;
@@ -39,11 +48,6 @@
   padding-right: 15px;
   display: flex;
 }
-.footer .logo {
-    color: $primary-white-color;
-    display: flex;
-    padding-bottom: 20px;
-}
 .right-footer h2 {
   font-weight: bold;
   font-size: 14px;
@@ -54,9 +58,5 @@
   margin-bottom: 20px;
 }
 .right-footer {
-  
   margin-left: 70px;
 }
-.footer-site {
-    display: block;
-  }
