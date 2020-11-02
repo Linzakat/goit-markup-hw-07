@@ -15,8 +15,8 @@
 }
 .work-list {
   position: relative;
-}
-.work-list-item {
+
+ &-item {
   position: absolute;
   bottom: 0;
   display: block;
@@ -34,6 +34,7 @@
   padding-bottom: 27px;
   align-items: center;
   justify-content: center;
+ }
 }
 .our-works-box {
   width: 370px;
@@ -54,28 +55,26 @@
   padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
-}
-.container-ourworks .our-works-box {
+
+ .our-works-box {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.container-ourworks .our-works-box :nth-last-child(-n + 3) {
+ .our-works-box :nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-.container-ourworks .our-works-box :nth-last-child(-n + 3) {
+ .our-works-box :nth-last-child(-n + 3) {
   margin-right: 0px;
+}
+ .list > li:nth-child(3n) {
+  margin-right: 0px;
+}
+ .list > li:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
 }
 .our-works-box > our-works-box-item {
   width: 322px;
   height: 70px;
   padding: 20px 24px;
-}
-.container-ourworks .list > li:nth-child(3n) {
-  margin-right: 0px;
-}
-.container-ourworks .list > li:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
-.container-ourworks {
-  margin-bottom: 94px;
 }
